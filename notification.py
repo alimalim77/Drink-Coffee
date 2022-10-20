@@ -3,7 +3,7 @@ from plyer import notification
 
 def Notification():
     notification.notify(
-        title = "Drink Water",
+        title = "Drink a Cup ",
         message = "Please stop working take five minutes rest and work",
         app_icon = r"photo.ico",
         timeout = 5
