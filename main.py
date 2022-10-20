@@ -9,9 +9,6 @@ root.title("Drink Water Notification")
 root.resizable(False,False)
 
 
-
-
-
 main = LabelFrame(root,padx= 100, pady = 7, borderwidth=3, relief="raised")
 main.grid(row=0,column=1,padx=20,pady=60)
 
@@ -33,7 +30,11 @@ inp.insert(0,"Enter Time: ")
 inp.grid(row=10,column=0,padx=30)
 
 def bar():
-    print("Hello")
+    val = int(inp.get())
+    while True:
+        time.sleep(val)
+        notification.Notification()
+    
 button = Button(main, text="SET", bg="#C4C4C4", pady=16,padx=40,borderwidth=3,relief=SOLID,command=bar)
 button.grid(row=12,column=0,pady=10)
 
