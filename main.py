@@ -1,5 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
+import time
+import notification
 
 root = Tk()
 root.geometry("550x550")
@@ -27,6 +29,12 @@ img_label = Label(main,image=my_img)
 img_label.grid(row = 1,column = 0, pady=10,padx=20)
 
 inp = Entry(main,width=30)
-inp.grid(row=0,col=2,padx=30)
+inp.insert(0,"Enter Time: ")
+inp.grid(row=10,column=0,padx=30)
+
+def bar():
+    print("Hello")
+button = Button(main, text="SET", bg="#C4C4C4", pady=16,padx=40,borderwidth=3,relief=SOLID,command=bar)
+button.grid(row=12,column=0,pady=10)
 
 root.mainloop()
