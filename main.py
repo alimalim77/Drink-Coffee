@@ -3,6 +3,7 @@ from PIL import Image, ImageTk
 import time
 import notification
 
+#Tkinter Code
 root = Tk()
 root.geometry("550x550")
 root.title("Take Caffeine Notification")
